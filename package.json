@@ -1,7 +1,7 @@
 {
   "name": "build-npm-repo-to",
-  "version": "0.0.1",
-  "description": "Program that checks out a git repository, `npm install`s it, runs a given `npm <script>` copies all files from a given relative folder to a given destination folder",
+  "version": "0.0.2",
+  "description": "Program that checks out a git repository, npm installs it, runs a given npm <script>, and copies all files from a given relative folder to a given destination folder",
   "engines": {
     "node": ">=6"
   },
