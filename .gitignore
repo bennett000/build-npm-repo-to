@@ -1,0 +1,18 @@
+
+node_modules/
+.DS_Store
+npm-debug.log*
+
+# exclude emacs temporary files
+*~
+\#*#
+.#*
+
+# exclude test coverage
+coverage
+
+# exclude JetBrains IDE
+.idea
+
+# lib (build)
+lib/
