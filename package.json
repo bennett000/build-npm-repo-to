@@ -2,13 +2,16 @@
   "name": "build-npm-repo-to",
   "version": "0.0.1",
   "description": "Program that checks out a git repository, `npm install`s it, runs a given `npm <script>` copies all files from a given relative folder to a given destination folder",
-  "engines": { "node" : ">=6" },
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
     "cover": "istanbul cover _mocha -- --recursive ./src",
     "lint": "eslint src/.",
     "mocha": "mocha --recursive -w ./src",
     "test": "npm run lint && npm run cover"
   },
+  "bin": "./cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rangle/build-npm-repo-to.git"
@@ -23,18 +26,24 @@
     "cp"
   ],
   "author": "Rangle",
-  "contributors": ["Michael Bennett <michael.bennett@rangle.io>"],
+  "contributors": [
+    "Michael Bennett <michael.bennett@rangle.io>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rangle/build-npm-repo-to/issues"
   },
   "homepage": "https://github.com/rangle/build-npm-repo-to#readme",
-  "dependencies": {},
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.4"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.5.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.0.2",
+    "mock-spawn": "^0.2.6",
     "rewire": "^2.5.2"
   }
 }
