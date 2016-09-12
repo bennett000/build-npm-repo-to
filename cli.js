@@ -2,13 +2,13 @@
 
 const path = require('path');
 
-const repo = process.argv[1];
+const repo = process.argv[2];
 
 if (!repo) {
   help(1);
 }
 
-let dest = process.argv[2];
+let dest = process.argv[3];
 
 if (!dest) {
   help(2);
@@ -21,7 +21,7 @@ if (!path.isAbsolute(dest)) {
 require('./src/main')
   .main(repo, dest)
   .then(() => {
-    console.log(`Clone and built ${repo} outputted to ${dest}`);
+    console.log(`Cloned and built ${repo} outputted to ${dest}`);
   })
   .catch((err) => {
     console.log(`Fatal Error: ${err.message}`);

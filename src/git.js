@@ -105,7 +105,9 @@ function create(repo, identifier = 'master') {
   return mkdirp(namespacePath)
     .then(() => cloneRepoInDir(repo, namespacePath))
     .then(() => checkoutIdentifierFromDir(identifier, repoDesc.path))
-    .then(() => repoDesc );
+    .then(() => repoDesc)
+    .catch((err) => destroy(repoId)
+      .then(() => { throw err; }));
 }
 
 
