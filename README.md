@@ -22,6 +22,8 @@ build-npm-repo-to https://github.com/user/repo /tmp/dood
 
 ## Development
 
+To find stories to work on checkout [our board](https://waffle.io/rangle/build-npm-repo-to "build-npm-repo-to work/task board")
+
 - `npm run cover` runs the tests with coverage
 - `npm run lint` runs lint
 - `npm run mocha` runs mocha (tests) on a watch
