@@ -14,7 +14,7 @@ if (!dest) {
   help(2);
 }
 
-dest = path.normalize(path);
+dest = path.normalize(dest);
 
 if (!path.isAbsolute(dest)) {
   dest = path.join(process.cwd(), dest);

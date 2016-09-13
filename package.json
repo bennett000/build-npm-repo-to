@@ -1,6 +1,6 @@
 {
   "name": "build-npm-repo-to",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Program that checks out a git repos builds them and copies their output",
   "engines": {
     "node": ">=6"
