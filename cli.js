@@ -14,8 +14,10 @@ if (!dest) {
   help(2);
 }
 
+dest = path.normalize(path);
+
 if (!path.isAbsolute(dest)) {
-  dest = path.normalize(process.cwd(), dest);
+  dest = path.join(process.cwd(), dest);
 }
 
 require('./src/main')
